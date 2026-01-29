@@ -1,0 +1,31 @@
+Aspect Ratio & Coordinated systems
+
+4:3 Classic -> Standar definitions: 800*600 o 1024*768
+16:9 WIDESCREEN -> Modern HD formats: 1920*1080 o 3840*2160
+16:10 COMPUTER -> Extended: 1920*1200
+
+Physical sizes vs. resolution
+150 * 150 points 72 ppi -> 150 * 150 pixels
+150 * 150 points 300 ppi -> 625 * 625 pixels
+A4 210 * 297 mm 72 ppi -> 595 * 882 pixels
+1:square(2)
+
+On smartphones, the ppi are calculated by meassuring diagonnaly the lenght of the screen.
+6.7 in / 458 ppi = 1284 * 2778 pixels
+6 in / 432 ppi = 1080 * 2340 pixels
+
+Coordinate systems: 
+Geometry, a system that uses numbers, to determine positions uniquely and euclidean or non euclidean space.
+El espacio euclidiano es un espacio determinado (otro tipo de sistema coordenado)
+Un espacio euclidiano incluye rectas planas, no hay curvaturas, en un triángulo sus ángulos suman 180 grados.
+Los espacios NO euclidianos incluyen en general geometría más avanzada de la que enseñan normalmente.
+
+The cartesian plane is a coordenated system in which can be drawn lines (vectors)
+
+Polar coordenades also works in the cartesian plane, the pole is the origin an the polar axis is the main axis.
+
+Polar to cartesian: x = r*cos(), y = r*sin()
+Cartesian to polar: r.= 0 and the angle in the interval (-PI,PI): r = square(x^2 + y^2), angle = arctan2(y,x)
+
+How to create images in Java:
+
