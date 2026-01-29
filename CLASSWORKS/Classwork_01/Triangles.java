@@ -4,7 +4,7 @@ import java.io.File; // For File, which is used to specify the output file
 import java.io.IOException; // For IOException, which is used to handle input/output exceptions and errors don't crash the program
 import javax.imageio.ImageIO; // For ImageIO, which is used to write the image to a file
 
-public class Main { // Main class
+public class Triangles { // Main class
     public static void main(String[] args) { // Main method
         BufferedImage img = new BufferedImage(800, 600, BufferedImage.TYPE_INT_RGB); // Create a new BufferedImage object with width 400, height 300, and RGB color model
         
