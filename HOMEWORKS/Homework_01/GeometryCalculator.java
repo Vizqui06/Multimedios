@@ -16,7 +16,7 @@ public class GeometryCalculator extends JFrame { // The main class but incudes J
         this.setSize(450, 500); // Window size
         this.setTitle("Geometry Calculator - Vizca"); // Window title
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // To close the window properly
-        this.setLocationRelativeTo(null); // Center the window
+        this.setLocationRelativeTo(null); // Center the window 
         
         initComponents(); // Call method to add components
     }
