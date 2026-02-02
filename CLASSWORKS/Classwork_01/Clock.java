@@ -1,8 +1,8 @@
 import java.awt.*; // For Color
 import java.awt.image.BufferedImage; // For BufferedImage, which is used to create and manipulate images
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
+import java.io.File; // For File, which is used to specify the output file
+import java.io.IOException; // For IOException, which is used to handle input/output exceptions and errors don't crash the program
+import javax.imageio.ImageIO; // For ImageIO, which is used to write the image to a file
 
 public class Clock{
         public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class Clock{
                 int dy = y - centerY; // Calculate the difference in Y from the center
 
                 if(dx * dx + dy * dy <= rad * rad){ // Check if the pixel is within the circle using the circle equation
-                    img.setRGB(x, y, Color.black.getRGB()); // Set the color of the pixel at (x, y) to red
+                    img.setRGB(x, y, Color.black.getRGB()); // Set the color of area of the circle to black
                 }
                 else if (dx * dx + dy * dy <= (rad + 4) * (rad + 5) && dx * dx + dy * dy >= rad * rad){ // Check if the pixel fits with the circunference of the circle
                     img.setRGB(x, y, Color.white.getRGB()); // Set the color of the circunference pixels to white
@@ -38,8 +38,8 @@ public class Clock{
                     }
                 }
 
-                int setHour = 7; // Set the hour to 10
-                int setMinute = 20; // Set the minute to 10
+                int setHour = 10; // Set the hour to 10
+                int setMinute = 10; // Set the minute to 10
 
                 // Draw both clock hands as white lines that starts at the center of the circle (hour is 10:10)
                 float hourAngle = (setHour % 12 + setMinute / 60.0f) / 12.0f * 360 - 90; // Calculate the angle for the hour hand (hour is 10)
